@@ -2,9 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "pi4b debug",
+            "name": "pi4b debug WHT",
             "type": "cppdbg",
             "request": "launch",
+            // ${workspaceFolder}/path/to/your/elf
             "program": "${workspaceFolder}/build/benos.elf",
             "args": [],
             "stopAtEntry": false,
@@ -19,7 +20,7 @@
                     "ignoreFailures": true
                 }
             ],
-            // "preLaunchTask": "build-your-project-task-name",
+            "preLaunchTask": "Run QEMU WHT",
             "miDebuggerPath": "/usr/bin/gdb-multiarch",
             "miDebuggerServerAddress": "localhost:1234",
         }

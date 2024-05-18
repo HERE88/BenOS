@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run QEMU WHT",
+            "type": "shell",
+            "command": "/home/wang/wang/runninglinuxkernel/qemu-patch-raspberry4/build/qemu-system-aarch64",
+            "args": [
+                "-machine",
+                "raspi4b1g",
+                "-nographic",
+                "-kernel",
+                "benos.bin",
+                "-S",
+                "-s"
+            ],
+            // "command": "/bin/bash",
+            // "args": [
+            //     "${workspaceFolder}/start_qemu.sh"
+            // ],
+            "group": "build",
+            "problemMatcher": [],
+            // "problemMatcher": {
+            //     "owner": "Run QEMU WHT",
+            //     "pattern": {
+            //         "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+            //         "file": 1,
+            //         "line": 2,
+            //         "column": 3,
+            //         "severity": 4,
+            //         "message": 5
+            //     },
+            //     "background": {
+            //         "activeOnStart": true,
+            //         "beginsPattern": ".*Starting.*",
+            //         "endsPattern": ".*QEMU terminated.*"
+            //     }
+            // },
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+}

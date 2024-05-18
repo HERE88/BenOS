@@ -5,5 +5,8 @@
             "binaryPath": "/home/wang/wang/runninglinuxkernel/BenOS/build/benos.elf",
             "binaryArgs": []
         }
-    ]
+    ],
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/toolchain-file.cmake",
+    },
 }
