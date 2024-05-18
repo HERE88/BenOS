@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/wang/wang/runninglinuxkernel/BenOS/build",
+            "binaryPath": "/home/wang/wang/runninglinuxkernel/BenOS/build/benos.elf",
+            "binaryArgs": []
+        }
+    ]
+}
